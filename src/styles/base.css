@@ -1,0 +1,142 @@
+/* base: original cascade order preserved */
+:root {
+  font-family: 'Manrope', sans-serif;
+  color: #202934;
+  background: #f7f8fa;
+  font-synthesis: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  --blue: #245ce8;
+  --muted: #687281;
+  --line: #e5e8ed;
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: wait;
+  opacity: 0.5;
+}
+button {
+  color: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input,
+select,
+textarea {
+  outline-offset: 4px;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--blue);
+}
+::selection {
+  background: #caddff;
+  color: #152c61;
+}
+input {
+  caret-color: var(--blue);
+}
+button {
+  transition:
+    background 0.16s,
+    color 0.16s,
+    border-color 0.16s;
+}
+button:hover {
+  filter: brightness(0.97);
+}
+svg {
+  flex-shrink: 0;
+  vertical-align: middle;
+  stroke-width: 1.7;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+h2 {
+  font-weight: 750;
+}
+button {
+  border: 0;
+  background: none;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 24px;
+  min-width: 0;
+}
+legend,
+.field-label {
+  font-size: 12px;
+  font-weight: 750;
+  margin-bottom: 11px;
+  display: block;
+}
+input:not([type='range']):not([type='color']):not([type='checkbox']),
+select {
+  width: 100%;
+  border: 1px solid #dce1e8;
+  border-radius: 7px;
+  background: white;
+  padding: 11px 12px;
+  color: #202934;
+  min-height: 43px;
+}
+input::placeholder {
+  color: #737d8b;
+}
+input[aria-invalid='true'] {
+  border-color: #b63b34 !important;
+}
+select {
+  margin-bottom: 18px;
+}
+input[type='range'] {
+  width: 100%;
+  accent-color: var(--blue);
+  height: 4px;
+  margin: 12px 0 15px;
+  cursor: pointer;
+}
+label.field-label {
+  margin-top: 8px;
+}
+.field-label span {
+  color: var(--muted);
+  font-weight: 500;
+  margin-left: 6px;
+}

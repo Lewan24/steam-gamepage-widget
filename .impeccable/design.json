@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-10T19:38:01.125610+00:00",
+  "title": "Design System: Steam Game Widget",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Primary",
+        "tonalRamp": [
+          "oklch(15% 0.2198 263.81)",
+          "oklch(27% 0.2198 263.81)",
+          "oklch(38% 0.2198 263.81)",
+          "oklch(50% 0.2198 263.81)",
+          "oklch(61% 0.2198 263.81)",
+          "oklch(73% 0.2198 263.81)",
+          "oklch(84% 0.2198 263.81)",
+          "oklch(95% 0.2198 263.81)"
+        ]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Primary Hover",
+        "tonalRamp": [
+          "oklch(15% 0.2025 263.73)",
+          "oklch(27% 0.2025 263.73)",
+          "oklch(38% 0.2025 263.73)",
+          "oklch(50% 0.2025 263.73)",
+          "oklch(61% 0.2025 263.73)",
+          "oklch(73% 0.2025 263.73)",
+          "oklch(84% 0.2025 263.73)",
+          "oklch(95% 0.2025 263.73)"
+        ]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Canvas",
+        "tonalRamp": [
+          "oklch(15% 0.0029 264.54)",
+          "oklch(27% 0.0029 264.54)",
+          "oklch(38% 0.0029 264.54)",
+          "oklch(50% 0.0029 264.54)",
+          "oklch(61% 0.0029 264.54)",
+          "oklch(73% 0.0029 264.54)",
+          "oklch(84% 0.0029 264.54)",
+          "oklch(95% 0.0029 264.54)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(27% 0.0000 89.88)",
+          "oklch(38% 0.0000 89.88)",
+          "oklch(50% 0.0000 89.88)",
+          "oklch(61% 0.0000 89.88)",
+          "oklch(73% 0.0000 89.88)",
+          "oklch(84% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0241 253.69)",
+          "oklch(27% 0.0241 253.69)",
+          "oklch(38% 0.0241 253.69)",
+          "oklch(50% 0.0241 253.69)",
+          "oklch(61% 0.0241 253.69)",
+          "oklch(73% 0.0241 253.69)",
+          "oklch(84% 0.0241 253.69)",
+          "oklch(95% 0.0241 253.69)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0263 258.37)",
+          "oklch(27% 0.0263 258.37)",
+          "oklch(38% 0.0263 258.37)",
+          "oklch(50% 0.0263 258.37)",
+          "oklch(61% 0.0263 258.37)",
+          "oklch(73% 0.0263 258.37)",
+          "oklch(84% 0.0263 258.37)",
+          "oklch(95% 0.0263 258.37)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.0075 260.73)",
+          "oklch(27% 0.0075 260.73)",
+          "oklch(38% 0.0075 260.73)",
+          "oklch(50% 0.0075 260.73)",
+          "oklch(61% 0.0075 260.73)",
+          "oklch(73% 0.0075 260.73)",
+          "oklch(84% 0.0075 260.73)",
+          "oklch(95% 0.0075 260.73)"
+        ]
+      },
+      "preview-stage": {
+        "role": "neutral",
+        "displayName": "Preview Stage",
+        "tonalRamp": [
+          "oklch(15% 0.0063 255.48)",
+          "oklch(27% 0.0063 255.48)",
+          "oklch(38% 0.0063 255.48)",
+          "oklch(50% 0.0063 255.48)",
+          "oklch(61% 0.0063 255.48)",
+          "oklch(73% 0.0063 255.48)",
+          "oklch(84% 0.0063 255.48)",
+          "oklch(95% 0.0063 255.48)"
+        ]
+      },
+      "preview-dark": {
+        "role": "neutral",
+        "displayName": "Preview Dark",
+        "tonalRamp": [
+          "oklch(15% 0.0225 259.36)",
+          "oklch(27% 0.0225 259.36)",
+          "oklch(38% 0.0225 259.36)",
+          "oklch(50% 0.0225 259.36)",
+          "oklch(61% 0.0225 259.36)",
+          "oklch(73% 0.0225 259.36)",
+          "oklch(84% 0.0225 259.36)",
+          "oklch(95% 0.0225 259.36)"
+        ]
+      },
+      "midnight": {
+        "role": "neutral",
+        "displayName": "Midnight",
+        "tonalRamp": [
+          "oklch(15% 0.0134 258.37)",
+          "oklch(27% 0.0134 258.37)",
+          "oklch(38% 0.0134 258.37)",
+          "oklch(50% 0.0134 258.37)",
+          "oklch(61% 0.0134 258.37)",
+          "oklch(73% 0.0134 258.37)",
+          "oklch(84% 0.0134 258.37)",
+          "oklch(95% 0.0134 258.37)"
+        ]
+      },
+      "midnight-ink": {
+        "role": "neutral",
+        "displayName": "Midnight Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0045 258.32)",
+          "oklch(27% 0.0045 258.32)",
+          "oklch(38% 0.0045 258.32)",
+          "oklch(50% 0.0045 258.32)",
+          "oklch(61% 0.0045 258.32)",
+          "oklch(73% 0.0045 258.32)",
+          "oklch(84% 0.0045 258.32)",
+          "oklch(95% 0.0045 258.32)"
+        ]
+      },
+      "midnight-muted": {
+        "role": "neutral",
+        "displayName": "Midnight Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0242 258.37)",
+          "oklch(27% 0.0242 258.37)",
+          "oklch(38% 0.0242 258.37)",
+          "oklch(50% 0.0242 258.37)",
+          "oklch(61% 0.0242 258.37)",
+          "oklch(73% 0.0242 258.37)",
+          "oklch(84% 0.0242 258.37)",
+          "oklch(95% 0.0242 258.37)"
+        ]
+      },
+      "midnight-line": {
+        "role": "neutral",
+        "displayName": "Midnight Line",
+        "tonalRamp": [
+          "oklch(15% 0.0212 262.57)",
+          "oklch(27% 0.0212 262.57)",
+          "oklch(38% 0.0212 262.57)",
+          "oklch(50% 0.0212 262.57)",
+          "oklch(61% 0.0212 262.57)",
+          "oklch(73% 0.0212 262.57)",
+          "oklch(84% 0.0212 262.57)",
+          "oklch(95% 0.0212 262.57)"
+        ]
+      },
+      "wishlist-lime": {
+        "role": "secondary",
+        "displayName": "Wishlist Lime",
+        "tonalRamp": [
+          "oklch(15% 0.2073 128.85)",
+          "oklch(27% 0.2073 128.85)",
+          "oklch(38% 0.2073 128.85)",
+          "oklch(50% 0.2073 128.85)",
+          "oklch(61% 0.2073 128.85)",
+          "oklch(73% 0.2073 128.85)",
+          "oklch(84% 0.2073 128.85)",
+          "oklch(95% 0.2073 128.85)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Page display",
+        "purpose": "Editor page heading."
+      },
+      "title": {
+        "displayName": "Game title",
+        "purpose": "Game card heading."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Inherited interface baseline."
+      },
+      "label": {
+        "displayName": "Field label",
+        "purpose": "Form labels and legends."
+      },
+      "code": {
+        "displayName": "Embed code",
+        "purpose": "Generated iframe markup."
+      }
+    },
+    "shadows": [
+      {
+        "name": "preview-lift",
+        "value": "drop-shadow(0 13px 18px #16253f12)",
+        "purpose": "CSS filter on preview wrapper."
+      }
+    ],
+    "motion": [
+      {
+        "name": "controls",
+        "value": "background .16s, color .16s, border-color .16s",
+        "purpose": "Button state transitions."
+      },
+      {
+        "name": "artwork",
+        "value": "transform .4s cubic-bezier(.22,1,.36,1)",
+        "purpose": "Artwork hover scale to 1.025."
+      },
+      {
+        "name": "loading",
+        "value": "spin 1.2s linear infinite",
+        "purpose": "Loading spinner; reduced-motion override minimizes animation."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1600px"
+      },
+      {
+        "name": "gutter-max",
+        "value": "1360px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1050px"
+      },
+      {
+        "name": "single-column-max",
+        "value": "780px"
+      },
+      {
+        "name": "phone-max",
+        "value": "430px"
+      },
+      {
+        "name": "card-container-max",
+        "value": "400px"
+      },
+      {
+        "name": "small-card-container-max",
+        "value": "315px"
+      }
+    ],
+    "notes": [
+      "Extracted from src/styles.css and src/config.ts; no browser screenshot verification: browser host unavailable.",
+      "Tonal ramps are synthesized OKLCH documentation previews, not additional runtime tokens. Out-of-gamut steps use browser gamut mapping."
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary editor action.",
+      "html": "<button class=\"ds-primary\">Copy embed code</button>",
+      "css": ".ds-primary{font-family:Manrope,sans-serif;font-size:11px;font-weight:750;border:0;border-radius:6px;padding:10px 15px;min-height:38px;cursor:pointer;transition:background .16s,color .16s,border-color .16s;background:var(--blue,#245ce8);color:white}.ds-primary:hover{background:#194bc9;filter:brightness(.97)}.ds-primary:focus-visible{outline:2px solid var(--blue,#245ce8);outline-offset:4px}"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Supporting editor action.",
+      "html": "<button class=\"ds-secondary\">Open preview</button>",
+      "css": ".ds-secondary{font-family:Manrope,sans-serif;font-size:11px;font-weight:750;border:0;border-radius:6px;padding:10px 15px;min-height:38px;cursor:pointer;transition:background .16s,color .16s,border-color .16s;background:#edf1f7;color:#324866}.ds-secondary:hover{filter:brightness(.97)}.ds-secondary:focus-visible{outline:2px solid var(--blue,#245ce8);outline-offset:4px}"
+    },
+    {
+      "name": "App ID field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Canonical text field; error uses aria-invalid.",
+      "html": "<input class=\"ds-input\" aria-label=\"Steam App ID\" placeholder=\"Enter Steam App ID\" />",
+      "css": ".ds-input{font-family:Manrope,sans-serif;font-size:14px;min-height:43px;padding:11px 12px;border:1px solid #dce1e8;border-radius:7px;background:white;color:#202934;caret-color:var(--blue,#245ce8)}.ds-input::placeholder{color:#737d8b}.ds-input:focus-visible{outline:2px solid var(--blue,#245ce8);outline-offset:4px}.ds-input[aria-invalid=true]{border-color:#b63b34}"
+    },
+    {
+      "name": "Settings tabs",
+      "kind": "nav",
+      "refersTo": "settings-tabs",
+      "description": "Static visual specimen of settings navigation; application implements tab semantics and keyboard behavior.",
+      "html": "<nav class=\"ds-tabs\" aria-label=\"Settings\"><button aria-current=\"page\">Appearance</button><button>Content</button></nav>",
+      "css": ".ds-tabs{display:flex;gap:22px;border-bottom:1px solid var(--line,#e5e8ed);font-family:Manrope,sans-serif}.ds-tabs button{background:none;border:0;border-bottom:2px solid transparent;color:var(--muted,#687281);padding:11px 0;font:inherit;font-size:11px;cursor:pointer}.ds-tabs button[aria-current]{color:var(--blue,#245ce8);border-bottom-color:var(--blue,#245ce8);font-weight:750}.ds-tabs button:hover{filter:brightness(.97)}.ds-tabs button:focus-visible{outline:2px solid var(--blue,#245ce8);outline-offset:4px}"
+    },
+    {
+      "name": "Genre tag",
+      "kind": "chip",
+      "refersTo": "genre-tag",
+      "description": "Informational genre tag in the default Midnight theme.",
+      "html": "<span class=\"ds-tag\">Adventure</span>",
+      "css": ".ds-tag{display:inline-block;font-family:Manrope,sans-serif;font-size:9px;line-height:1.5;padding:3px 8px;border-radius:4px;background:#303641;color:#a8b2c1}"
+    },
+    {
+      "name": "Editor panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Flat bordered editor surface.",
+      "html": "<section class=\"ds-panel\"><h2 class=\"ds-panel-heading\">Widget settings</h2><p class=\"ds-panel-body\">Configure your Steam game card.</p></section>",
+      "css": ".ds-panel{font-family:Manrope,sans-serif;background:white;color:#202934;border:1px solid var(--line,#e5e8ed);border-radius:12px;overflow:hidden}.ds-panel-heading{font-size:13px;font-weight:750;margin:0;padding:20px 23px;border-bottom:1px solid var(--line,#e5e8ed)}.ds-panel-body{font-size:12px;padding:24px 23px;margin:0}"
+    },
+    {
+      "name": "Steam card CTA",
+      "kind": "button",
+      "refersTo": "widget-cta",
+      "description": "Default card action; source computes foreground for custom accents.",
+      "html": "<a class=\"ds-cta\" href=\"https://store.steampowered.com/\">Wishlist on Steam</a>",
+      "css": ".ds-cta{display:inline-flex;align-items:center;justify-content:center;font-family:Manrope,sans-serif;font-size:10px;font-weight:800;min-height:39px;padding:11px 14px;border-radius:6px;background:#a3e635;color:#000;text-decoration:none}.ds-cta:hover{filter:brightness(1.08)}.ds-cta:focus-visible{outline:2px solid #f5f7fa;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Game Workbench",
+    "overview": "The implemented Operate direction is a calm, light tool surrounding expressive Steam artwork. Compact settings and restrained blue controls keep the editor precise; the card is the visual focal point. The editor stays light while the embedded card carries its own theme, accent, layout and corner radius.\n\nThis working metaphor and the descriptive color names document the implemented direction; they are not additional user-confirmed brand commitments. Source evidence: `src/styles.css` and `src/config.ts`. Browser screenshot verification was unavailable because the browser host could not be reached.",
+    "keyCharacteristics": [
+      "Light, bordered editor surfaces with compact settings.",
+      "Artwork-led cards with independent theme and accent controls.",
+      "Blue editor actions and a lime CTA on the default Midnight card.",
+      "Explicit focus treatments and restrained motion."
+    ],
+    "rules": [
+      {
+        "name": "The Independent Accent Rule",
+        "body": "Changing a card accent must not recolor the editor's blue controls.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do keep blue editor actions independent of the card's configurable accent.",
+      "Do preserve each card theme's foreground, muted text and dividers as a set.",
+      "Do retain visible keyboard focus and reduced-motion handling."
+    ],
+    "donts": [
+      "Don't spread the preview drop shadow across flat editor panels.",
+      "Don't force editor panel corners onto a user-configured card.",
+      "Don't hard-code a single CTA foreground for every custom accent."
+    ]
+  }
+}

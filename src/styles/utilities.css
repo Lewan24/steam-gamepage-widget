@@ -1,0 +1,25 @@
+/* utilities: original cascade order preserved */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+.embed-page,
+.embed-page body {
+  background: transparent;
+  margin: 0;
+}
+.embed-container {
+  width: 100%;
+  padding: 0;
+  max-width: 100%;
+}
+.embed-container .game-widget {
+  max-width: 100%;
+}
+.embed-container .widget-placeholder {
+  min-height: 200px;
+}
