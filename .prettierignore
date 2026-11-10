@@ -3,4 +3,5 @@ dist
 .npm-cache
 .tools
 .impeccable
+.wrangler
 package-lock.json

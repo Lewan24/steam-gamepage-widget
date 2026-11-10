@@ -7,7 +7,6 @@ Samodzielna aplikacja React + TypeScript z generatorem interaktywnych widgetów 
 Wymagany Node.js 22.12+ i dostęp serwera do internetu.
 
 ```powershell
-cd steam-game-widget
 npm install
 npm run dev
 ```
@@ -22,7 +21,43 @@ npm run build
 npm start
 ```
 
-Hostuj jako **Node.js Web Service**, np. na VPS, Render lub Railway. Katalog główny usługi: `steam-game-widget`; build: `npm ci && npm run build`; start: `npm start`. Serwer respektuje zmienne `PORT` (domyślnie 3000) i `HOST` (domyślnie 0.0.0.0). Użyj HTTPS w reverse proxy/hostingu. Zwykły hosting statyczny samego `dist` nie wystarczy: API musi działać na serwerze, aby przeglądarka nie napotykała blokady CORS Steam. Nie jest wymagany klucz Steam API, konto ani baza danych.
+Hostuj jako **Node.js Web Service**, np. na VPS, Render lub Railway, albo użyj opisanej poniżej obsługi Cloudflare. Katalog główny usługi: katalog tego repozytorium; build: `npm ci && npm run build`; start: `npm start`. Serwer Node.js respektuje zmienne `PORT` (domyślnie 3000) i `HOST` (domyślnie 0.0.0.0). Użyj HTTPS w reverse proxy/hostingu. Sam frontend statyczny nie wystarczy: endpoint `/api/games/:id` musi obsługiwać Node.js, Pages Function lub Worker. Nie jest wymagany klucz Steam API, konto ani baza danych.
+
+### Cloudflare Pages — integracja Git
+
+W ustawieniach projektu Pages wybierz:
+
+- **Root directory:** katalog repozytorium (pozostaw puste, jeśli `package.json` jest w jego głównym katalogu).
+- **Build command:** `npm run build`.
+- **Build output directory:** `dist`.
+- **Node.js:** 22.12 lub nowszy, np. zmienna `NODE_VERSION=22`.
+
+Wdróż ponownie repozytorium wraz z katalogami `functions`, `cloudflare` i `server`. Cloudflare zbuduje funkcję `functions/api/[[path]].js`, która obsługuje `/api/*`, używając tej samej logiki Steam co lokalny serwer. `public/_routes.json` trafia do `dist` podczas budowania i ogranicza uruchamianie Functions do API. Frontend oraz adresy `/embed/:id` korzystają z domyślnej obsługi SPA Pages. Nie dodawaj nadrzędnego `404.html` ani przekierowania `/api/*` do `index.html`.
+
+Samo ponowne przesłanie `dist` metodą drag-and-drop w panelu Cloudflare **nie wdraża katalogu `functions`**. Użyj integracji Git albo z głównego katalogu repozytorium wykonaj:
+
+```sh
+npm run build
+npx wrangler pages deploy dist --project-name TWOJ_PROJEKT_PAGES
+```
+
+CLI Wrangler może poprosić o logowanie do Twojego konta Cloudflare. Nie uruchamiasz `npm start` na Pages. Konfiguracja Pages znajduje się w `wrangler.jsonc`.
+
+### Cloudflare Workers — Static Assets
+
+Jeśli Twój projekt jest Workerem, a nie Pages, ustaw:
+
+- **Build command:** `npm run build`.
+- **Deploy command:** `npx wrangler deploy --config wrangler.worker.jsonc`.
+- **Root directory:** katalog tego repozytorium.
+
+Ten wariant wdraża `cloudflare/worker.mjs` wraz z plikami `dist`. `run_worker_first` kieruje `/api` i `/api/*` do Workera przed obsługą SPA; pozostałe adresy obsługuje binding `ASSETS`. Nie wdrażaj samego `dist` jako statycznego Workera bez skryptu API. Pole `name` w `wrangler.worker.jsonc` dopasuj do nazwy istniejącego Workera na swoim koncie.
+
+### Sprawdzenie po wdrożeniu
+
+Otwórz `https://TWOJA_DOMENA/api/games/413150`. Oczekiwany wynik: JSON zawierający `id`, `name`, grafikę i pozostałe dane gry. `<!doctype html>` oznacza, że backend nie został wdrożony lub `/api/*` nadal trafia do fallbacku SPA. Nieznany endpoint `/api/unknown` powinien zwrócić błąd 404 w JSON. Następnie sprawdź generator i `/embed/413150`.
+
+Na Cloudflare cache i prosty limit zapytań działają w pamięci danej instancji, a nie jako globalny licznik wszystkich instancji. Pobieranie Steam działa bez modułów Node.js i nie wymaga flagi `nodejs_compat`.
 
 Docker:
 
