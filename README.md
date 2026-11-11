@@ -2,6 +2,9 @@
 
 Samodzielna aplikacja React + TypeScript z generatorem interaktywnych widgetów stron gier Steam. Projekt `steam-widget-main-reference` obok służy wyłącznie jako referencja: nie jest zależnością i nie jest modyfikowany. Nowy projekt nie korzysta z jego kodu Java, logowania ani bazy danych.
 
+## Demo and ready to use app
+https://steam-gamepage-widget.lewanmordor.workers.dev/
+
 ## Uruchomienie
 
 Wymagany Node.js 22.12+ i dostęp serwera do internetu.
